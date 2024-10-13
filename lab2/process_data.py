@@ -21,7 +21,7 @@ with open(path) as f:
 
 @print_result
 def f1(arg):
-    return [i for i in Unique(j["job-name"] for j in arg)]
+    return [i for i in Unique(list(j["job-name"] for j in arg),ignore_case = True)]
 
 
 @print_result
