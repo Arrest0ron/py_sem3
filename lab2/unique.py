@@ -1,5 +1,4 @@
 # Итератор для удаления дубликатов
-from random import *
 from gen_random import gen_random
 
 class Unique(object):
