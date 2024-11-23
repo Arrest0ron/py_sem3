@@ -161,7 +161,11 @@ def main():
             update_user(str(input("username (Non empty): ")))
         if a == 5:
             break
-                           
+      
+def get_key():
+    contents = read_json_contents("API.json")
+    return contents["API"]
+
 if __name__ == "__main__":
     main()
     
