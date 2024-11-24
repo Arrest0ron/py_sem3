@@ -33,6 +33,8 @@ class User(SearchUser):
         self._registration = data[3]
         self._total_connections = data[4]
         self._last_update = data[5]
+        self._last_connected = data[6]
+        self._reports = data[7]
 
     @property
     def connected_uid(self):
@@ -74,13 +76,28 @@ class User(SearchUser):
     @total_connections.setter
     def total_connections(self, total_connections):
         self._total_connections = total_connections
+        
+    @property
+    def last_connected(self):
+        return self._last_connected
+
+    @last_connected.setter
+    def last_connected(self, last_connected):
+        self._last_connected = last_connected
+        
+    @property
+    def reports(self):
+        return self._reports
+
+    @reports.setter
+    def reports(self, reports):
+        self._reports= reports
 
 class ConnectedUser(BaseUser):
     def __init__(self, data):
         super().__init__(data[0])
         self._telegram_uid = data[1]
-        
-    
+      
     @property
     def telegram_uid_2(self):
         return self._telegram_uid

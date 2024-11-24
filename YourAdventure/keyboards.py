@@ -23,3 +23,9 @@ inline_regular_buttons_list = [
 inline_banned_buttons_list = [
     InlineKeyboardButton(text="Подать апелляцию", callback_data="appeal")
 ]
+
+inline_rate_buttons_list = [
+    InlineKeyboardButton(text="👍", callback_data="increase_rating"),
+    InlineKeyboardButton(text="👎", callback_data="decrease_rating"),  
+    InlineKeyboardButton(text="Пожаловаться", callback_data="report")        
+]

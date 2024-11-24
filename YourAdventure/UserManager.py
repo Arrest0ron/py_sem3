@@ -119,9 +119,12 @@ def get_credentials(username):
         print(f"User {username} not found")
         return None
     return contents["Users"][index]       
-        
+    
+def get_key():
+    contents = read_json_contents("API.json")
+    return contents["API"]
+    
 def main(): 
-  
     while (True):
         print(f"Welcome to the UserManager control panel")
         print("----------------------------------------")
@@ -162,10 +165,6 @@ def main():
         if a == 5:
             break
       
-def get_key():
-    contents = read_json_contents("API.json")
-    return contents["API"]
-
 if __name__ == "__main__":
     main()
     
