@@ -1,0 +1,17 @@
+{
+    "Users": [
+        {
+            "username": "ChatFreelyAdmin",
+            "host": "localhost",
+            "password": "admin123321",
+            "database": "ChatFreely"
+        },
+        {
+            "username": "TestUser",
+            "host": "localhost",
+            "password": "test_pass",
+            "database": "Test_ChatFreely"
+        }
+    ],
+    "API": "7667106669:AAF-BFujnFXqFKtm6hgzB4q46QVxtQhPyls"
+}
