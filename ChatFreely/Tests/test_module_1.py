@@ -53,7 +53,6 @@ class TestClass:
         for uid in test_uids:
             await log_user(uid)
             await add_to_search(await fetch_user(uid))
-            
         await add_to_connections(test_uids[0], test_uids[1])
         res = await has_data()
         for value in res.values():
