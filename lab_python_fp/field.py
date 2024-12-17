@@ -25,3 +25,4 @@ def field(items, *args):
 if __name__ == "__main__":
     for i in field(goods,"title","price"):
         print(i)
+        

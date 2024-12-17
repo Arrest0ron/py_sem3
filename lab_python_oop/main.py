@@ -1,7 +1,7 @@
 from Square import Square
 from Circle import Circle
 from Rectangle import Rectangle
-import pyfiglet # type: ignore
+import pyfiglet 
 
 print(pyfiglet.figlet_format("laba!", font="slant"))
 

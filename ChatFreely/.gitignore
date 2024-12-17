@@ -1,1 +1,4 @@
 .ChatFreely
+config.json
+.pytest_cache
+

@@ -7,7 +7,7 @@ from unique import Unique
 from gen_random import gen_random
 # Сделаем другие необходимые импорты
 
-path = "lab2/data/data_light.json"
+path = "data/data_light.json"
 
 # Необходимо в переменную path сохранить путь к файлу, который был передан при запуске сценария
 
@@ -21,7 +21,7 @@ with open(path) as f:
 
 @print_result
 def f1(arg):
-    return [i for i in Unique(list(j["job-name"] for j in arg),ignore_case = True)]
+    return sorted([i for i in Unique(list(j["job-name"] for j in arg),ignore_case = True)])
 
 
 @print_result

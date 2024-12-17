@@ -33,5 +33,12 @@ class Unique(object):
     
 if __name__ == "__main__":
     data = [i for i in "waterfallF"] * 5
-    for i in Unique(gen_random(100,1,5), ignore_case = True):
-        print(i)
+    for i in Unique(gen_random(100,1,5)):
+        print(i, end=" ")
+    print("\n____________")
+    for i in Unique(data):
+        print(i, end=" ")
+    print("\n____________")
+    for i in Unique(data, ignore_case = True):
+        print(i,end=" ")
+    print("\n____________")
